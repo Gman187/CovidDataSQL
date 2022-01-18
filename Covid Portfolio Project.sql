@@ -28,7 +28,6 @@ ORDER BY 1,2
 
 Select Location, Population, MAX(total_cases) AS highest_infection_count, MAX((total_cases/population))*100 AS percent_of_population_infected
 From [Portfolio Project]..CovidData
--- WHERE location like '%states%'
 GROUP BY Location, Population
 ORDER BY percent_of_population_infected DESC
 
